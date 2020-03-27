@@ -45,4 +45,4 @@ app.use((req, res) => {
   render(req, res, { template: "404" });
 });
 
-app.listen(80);
+app.listen(process.env.PORT || 80);
